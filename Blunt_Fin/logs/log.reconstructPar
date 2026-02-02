@@ -8,10 +8,10 @@
 Build  : _e5c6ccc3-20250814 OPENFOAM=2412 patch=250814 version=2412
 Arch   : "LSB;label=32;scalar=64"
 Exec   : reconstructPar
-Date   : Jan 26 2026
-Time   : 06:50:59
+Date   : Jan 31 2026
+Time   : 19:52:12
 Host   : Albert
-PID    : 453322
+PID    : 1300415
 I/O    : uncollated
 Case   : /home/shafa/controlSurfaces/Blunt_Fin
 nProcs : 1
@@ -25,37 +25,37 @@ Create time
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 
@@ -265,7 +265,384 @@ No lagrangian fields
 
 No FA fields
 
-Time = 351
+Time = 400
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 450
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 500
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 550
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 600
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 650
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 700
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 750
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 800
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 850
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 900
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 950
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 1000
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        alphat
+        nuTilda
+        nut
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 1015
 
 Reconstructing FV fields
 

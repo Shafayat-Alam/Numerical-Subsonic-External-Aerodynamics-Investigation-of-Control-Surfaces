@@ -56,6 +56,15 @@ functions
         log             true;
     }
 
+    yPlus
+    {
+        type            yPlus;
+        libs            ("libutilityFunctionObjects.so");
+        writeControl    timeStep;
+        writeInterval   1;
+        log             true;
+    }
+
     /*
     writeFields
     {

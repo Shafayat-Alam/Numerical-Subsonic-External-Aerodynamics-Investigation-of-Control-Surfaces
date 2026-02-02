@@ -8,11 +8,19 @@
 Build  : _e5c6ccc3-20250814 OPENFOAM=2412 patch=250814 version=2412
 Arch   : "LSB;label=32;scalar=64"
 Exec   : surfaceFeatureExtract
-Date   : Jan 25 2026
-Time   : 21:50:36
+Date   : Jan 31 2026
+Time   : 16:54:25
 Host   : Albert
-PID    : 452018
+PID    : 1300001
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
 I/O    : uncollated
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
 Case   : /home/shafa/controlSurfaces/Blunt_Fin
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
@@ -25,7 +33,7 @@ Create time
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Note: Feature line extraction only valid on closed manifold surfaces
@@ -40,7 +48,7 @@ Write options: writeObj=yes writeVTK=off
 Statistics:
 Triangles    : 12 in 1 region(s)
 Vertices     : 8
-Bounding Box : (-0.039464299 -0.0030479999 -1.40998e-18) (0.100236 0.00012700001 0.069849998)
+Bounding Box : (-0.03946429863572121 -0.003047999925911427 -1.409980018909155e-18) (0.1002359986305237 0.0001270000066142529 0.06984999775886536)
 
 Constructing feature set from included angle 120
 Selecting edges based purely on geometric tests: no
@@ -85,7 +93,7 @@ Writing 0 region edges to "/home/shafa/controlSurfaces/Blunt_Fin/constant/extend
 Writing 11 edge directions to "/home/shafa/controlSurfaces/Blunt_Fin/constant/extendedFeatureEdgeMesh/Fin_edgeDirections.obj"
 
 Writing featureEdgeMesh to "/home/shafa/controlSurfaces/Blunt_Fin/constant/triSurface/Fin.eMesh"
-ExecutionTime = 0.01 s  ClockTime = 0 s
+ExecutionTime = 0 s  ClockTime = 0 s
 
 End
 

@@ -11,10 +11,10 @@
 
 
 # 1. Navigate to your working directory
-cd ~/OpenFOAM/controlSurfaces/baseline
+cd ~/OpenFOAM/controlSurfaces/Aero_Fin
 
 # 2. Make sure the script is executable
 chmod +x ./simulate.sh
 
 # 3. Run the command
-./simulate.py
+./mesh_solve.py

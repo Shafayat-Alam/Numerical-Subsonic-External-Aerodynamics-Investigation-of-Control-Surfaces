@@ -10,7 +10,7 @@ def run_solver():
     if not os.path.exists('logs'): 
         os.makedirs('logs')
     
-    n_procs = 12 # Needs to match decomposeParDict
+    n_procs = 6 # Needs to match decomposeParDict
     
     tasks = [
         ("decomposePar -force", "logs/log.decomposePar"),

@@ -8,12 +8,20 @@
 Build  : _e5c6ccc3-20250814 OPENFOAM=2412 patch=250814 version=2412
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
-Date   : Jan 25 2026
-Time   : 19:57:48
+Date   : Jan 31 2026
+Time   : 19:53:10
 Host   : Albert
-PID    : 351797
+PID    : 1300419
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
 I/O    : uncollated
-Case   : /home/shafa/controlSurfaces/trapezoidal_tapered
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
+Case   : /home/shafa/controlSurfaces/Aero_Fin_mesh_refinement
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -25,7 +33,7 @@ Create time
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Creating block mesh from "system/blockMeshDict"
 Creating block edges
@@ -47,16 +55,15 @@ Check topology
 
 Creating block offsets
 Creating merge list (topological search)...
-Deleting polyMesh directory "constant/polyMesh"
 
 Creating polyMesh from blockMesh
 Creating patches
 Creating cells
 Creating points with scale (1 1 1)
     Block 0 cell size :
-        i : 0.0068262217 .. 0.010487219
-        j : 0.036155 .. 0.036155
-        k : 0.01120375 .. 0.01120375
+        i : 0.00639958280086339 .. 0.01079566666666665
+        j : 0.03615499999999994 .. 0.03615499999999983
+        k : 0.01120375 .. 0.01120374999999996
 
 No patch pairs to merge
 
@@ -64,7 +71,7 @@ Writing polyMesh with 0 cellZones
 ----------------
 Mesh Information
 ----------------
-  boundingBox: (-1.033 -0.8264 0) (2.2057 0.8264 0.8963)
+  boundingBox: (-1.033 -0.8264000000000004 0) (2.205700000000001 0.8264000000000008 0.8963000000000002)
   nPoints: 3664521
   nCells: 3584000
   nFaces: 10832000
@@ -74,8 +81,7 @@ Patches
 ----------------
   patch 0 (start: 10672000 size: 12800) name: inlet
   patch 1 (start: 10684800 size: 12800) name: outlet
-  patch 2 (start: 10697600 size: 89600) name: walls
-  patch 3 (start: 10787200 size: 44800) name: rootSymmetry
+  patch 2 (start: 10697600 size: 134400) name: walls
 
 End
 

@@ -1,6 +1,4 @@
-/*--------------------------------*- C++ -*----------------------------------*\
-  Reconstructed for Robust Snapping - Level 6/7 Strategy
-\*---------------------------------------------------------------------------*/
+
 FoamFile
 {
     version     2.0;
@@ -27,13 +25,13 @@ castellatedMeshControls
     maxLocalCells 1000000;
     maxGlobalCells 4000000; 
     minRefinementCells 10;
-    nCellsBetweenLevels 4; // Reduced from 4 for smoother transitions
+    nCellsBetweenLevels 4; 
 
     features 
     (
         {
             file "Fin.eMesh"; 
-            level 6; // Dropped from 8 to prevent cell collapse
+            level 6; 
         }
     );
 
@@ -41,7 +39,7 @@ castellatedMeshControls
     {
         Fin 
         {
-            level (6 7); // Dropped from 7 8
+            level (6 7); 
             patchInfo { type wall; }
         }
     }
@@ -56,17 +54,17 @@ castellatedMeshControls
     }
     
     resolveFeatureAngle 30;
-    mergeTolerance 1e-4; // This tells snappy to ignore anything smaller than 0.1mm
+    mergeTolerance 1e-4; 
     allowFreeStandingZoneFaces true;
-    locationInMesh (-0.5 0 0.4); 
+    locationInMesh (-0.5 0 0.2); 
 }
 
 snapControls
 {
-    nSmoothPatch 5;       // Increased for smoother surface approach
-    tolerance 1.0;        // Increased to help "search" for surface
+    nSmoothPatch 5;       
+    tolerance 1.0;        
     nSolveIter 100;      
-    nRelaxIter 15;        // More relaxation iterations to fix errors
+    nRelaxIter 15;        
     
     nFeatureSnapIter 15; 
     implicitFeatureSnap false; 
@@ -78,18 +76,18 @@ addLayersControls {}
 
 meshQualityControls
 {
-    maxNonOrtho         75; // Even more relaxed
+    maxNonOrtho         75; 
     maxBoundarySkewness  20;
     maxInternalSkewness  4;
     maxConcave          80;
     minArea         1e-13; 
-    minVol        -1e30; // Allows negative volumes during snapping
+    minVol        -1e30; 
     minTwist      -1e30;
     minFaceWeight 0.02;
     minVolRatio          0.01;
-    minTetQuality       -1e30; // Allows inverted tets
-    errorReduction      0.5;   // Be less aggressive
-    nSmoothScale        10;    // More smoothing to try and save the distorted cells
+    minTetQuality       -1e30; 
+    errorReduction      0.5;   
+    nSmoothScale        10;    
     minTriangleTwist -1e30;
     minDeterminant    0.001;
 }

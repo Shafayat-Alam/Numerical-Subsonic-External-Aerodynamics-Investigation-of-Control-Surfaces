@@ -17,11 +17,6 @@ FoamFile
 Fin.stl
 {
     extractionMethod    extractFromSurface;
-    includedAngle       120; 
-    subsetFeatures
-    {
-        nonManifoldEdges       no;
-        openEdges              yes;
-    }
+    includedAngle       118; 
     writeObj            yes; 
 }

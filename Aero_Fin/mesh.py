@@ -11,7 +11,7 @@ def run_mesh():
         os.makedirs('logs')
     
     # 16 ranks as per your decomposeParDict
-    n_procs = 12
+    n_procs = 6
 
     # Step 1: Serial prep work
     prep_commands = [

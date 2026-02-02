@@ -8,12 +8,12 @@
 Build  : _e5c6ccc3-20250814 OPENFOAM=2412 patch=250814 version=2412
 Arch   : "LSB;label=32;scalar=64"
 Exec   : decomposePar -force
-Date   : Jan 26 2026
-Time   : 03:26:05
+Date   : Jan 31 2026
+Time   : 20:41:03
 Host   : Albert
-PID    : 452462
+PID    : 1300504
 I/O    : uncollated
-Case   : /home/shafa/controlSurfaces/Aero_Fin
+Case   : /home/shafa/controlSurfaces/Aero_Fin_mesh_refinement
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -25,19 +25,18 @@ Create time
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 
 Decomposing mesh
 
-Removing 6 existing processor directories
 Create mesh
 
 Calculating distribution of cells
 Decomposition method scotch [6] (region region0)
 
-Finished decomposition in 6.39 s
+Finished decomposition in 7.17 s
 
 Calculating original mesh data
 
@@ -51,96 +50,100 @@ Constructing processor meshes
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 0
-    Number of cells = 775852
-    Number of points = 952260
-    Number of faces shared with processor 1 = 4710
-    Number of faces shared with processor 2 = 115
+    Number of cells = 985352
+    Number of points = 1018072
+    Number of faces shared with processor 1 = 1278
+    Number of faces shared with processor 2 = 13677
     Number of processor patches = 2
-    Number of processor faces = 4825
-    Number of boundary faces = 144779
+    Number of processor faces = 14955
+    Number of boundary faces = 49821
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 1
-    Number of cells = 772896
-    Number of points = 863997
-    Number of faces shared with processor 0 = 4710
-    Number of faces shared with processor 2 = 8423
-    Number of faces shared with processor 3 = 5995
-    Number of processor patches = 3
-    Number of processor faces = 19128
-    Number of boundary faces = 82167
+    Number of cells = 987324
+    Number of points = 1023196
+    Number of faces shared with processor 0 = 1278
+    Number of faces shared with processor 2 = 14246
+    Number of faces shared with processor 3 = 9900
+    Number of faces shared with processor 4 = 693
+    Number of faces shared with processor 5 = 64
+    Number of processor patches = 5
+    Number of processor faces = 26181
+    Number of boundary faces = 44817
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 2
-    Number of cells = 774189
-    Number of points = 801181
-    Number of faces shared with processor 0 = 115
-    Number of faces shared with processor 1 = 8423
-    Number of faces shared with processor 3 = 9057
+    Number of cells = 988311
+    Number of points = 1022775
+    Number of faces shared with processor 0 = 13677
+    Number of faces shared with processor 1 = 14246
+    Number of faces shared with processor 3 = 5393
     Number of processor patches = 3
-    Number of processor faces = 17595
-    Number of boundary faces = 35733
+    Number of processor faces = 33316
+    Number of boundary faces = 34892
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 3
-    Number of cells = 777343
-    Number of points = 806797
-    Number of faces shared with processor 1 = 5995
-    Number of faces shared with processor 2 = 9057
-    Number of faces shared with processor 4 = 7949
-    Number of faces shared with processor 5 = 6818
+    Number of cells = 976962
+    Number of points = 1041133
+    Number of faces shared with processor 1 = 9900
+    Number of faces shared with processor 2 = 5393
+    Number of faces shared with processor 4 = 1692
+    Number of faces shared with processor 5 = 2460
     Number of processor patches = 4
-    Number of processor faces = 29819
-    Number of boundary faces = 28441
+    Number of processor faces = 19445
+    Number of boundary faces = 68059
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 4
-    Number of cells = 774940
-    Number of points = 802152
-    Number of faces shared with processor 3 = 7949
-    Number of faces shared with processor 5 = 10461
-    Number of processor patches = 2
-    Number of processor faces = 18410
-    Number of boundary faces = 35418
+    Number of cells = 970850
+    Number of points = 1157495
+    Number of faces shared with processor 1 = 693
+    Number of faces shared with processor 3 = 1692
+    Number of faces shared with processor 5 = 6497
+    Number of processor patches = 3
+    Number of processor faces = 8882
+    Number of boundary faces = 84989
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Processor 5
-    Number of cells = 771021
-    Number of points = 797839
-    Number of faces shared with processor 3 = 6818
-    Number of faces shared with processor 4 = 10461
-    Number of processor patches = 2
-    Number of processor faces = 17279
-    Number of boundary faces = 35773
+    Number of cells = 970678
+    Number of points = 1119397
+    Number of faces shared with processor 1 = 64
+    Number of faces shared with processor 3 = 2460
+    Number of faces shared with processor 4 = 6497
+    Number of processor patches = 3
+    Number of processor faces = 9021
+    Number of boundary faces = 91539
 
-Number of processor faces = 53528
-Max number of cells = 777343 (0.38347128% above average 774373.5)
-Max number of processor patches = 4 (50% above average 2.6666667)
-Max number of faces between processors = 29819 (67.12188% above average 17842.667)
+Number of processor faces = 55900
+Max number of cells = 988311 (0.8570320115207486% above average 979912.8333333334)
+Max number of processor patches = 5 (49.99999999999999% above average 3.333333333333333)
+Max number of faces between processors = 33316 (78.79785330948123% above average 18633.33333333333)
 
 Time = 0
 
@@ -148,37 +151,37 @@ Processor 0: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Processor 1: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Processor 2: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Processor 3: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Processor 4: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Processor 5: field transfer
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 End

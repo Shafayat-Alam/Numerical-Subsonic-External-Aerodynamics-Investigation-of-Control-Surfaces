@@ -40,15 +40,13 @@ blocks
     simpleGrading 
     (
         
-        ((0.32 0.3 4) (0.68 0.9 1))  
-
+        ((0.30 0.3 4) (0.70 0.9 1))
         
         (
             (0.35 0.10 1)    
             (0.30 0.80 1)    
             (0.35 0.10 1)    
         )
-        
         
         1
     )
@@ -63,26 +61,24 @@ boundary
         type patch;
         faces ((0 3 7 4));
     }
+    
     outlet
     {
         type patch;
         faces ((1 5 6 2));
     }
+
     walls
-    {
-        type patch;
-        faces
-        (
-            (0 4 5 1) 
-            (3 2 6 7) 
-            (4 7 6 5) 
-        );
-    }
-    rootSymmetry
-    {
-        type symmetry; 
-        faces ((0 1 2 3));
-    }
-);
+        {
+            type patch;
+            faces
+            (
+                (0 4 5 1) // Side
+                (3 2 6 7) // Side
+                (4 7 6 5) // Top
+                (0 1 2 3) // Bottom (The missing piece!)
+            );
+        }
+    );
 
 // ************************************************************************* //

@@ -8,12 +8,20 @@
 Build  : _e5c6ccc3-20250814 OPENFOAM=2412 patch=250814 version=2412
 Arch   : "LSB;label=32;scalar=64"
 Exec   : reconstructParMesh -constant
-Date   : Jan 25 2026
-Time   : 20:29:47
+Date   : Jan 31 2026
+Time   : 20:40:54
 Host   : Albert
-PID    : 351914
+PID    : 1300499
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
 I/O    : uncollated
-Case   : /home/shafa/controlSurfaces/trapezoidal_tapered
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 552
+    PWD is not the cwd() - reverting to physical description
+Case   : /home/shafa/controlSurfaces/Aero_Fin_mesh_refinement
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -25,7 +33,7 @@ Create time
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 Merge individual processor meshes back into one master mesh.
 Use if the original master mesh has been deleted or the processor meshes
@@ -39,41 +47,41 @@ Not well tested & use at your own risk!
 Merge assuming correct, fully matched procBoundaries.
 
 Found 6 processor directories
-    Reading database "trapezoidal_tapered/processor0"
+    Reading database "Aero_Fin_mesh_refinement/processor0"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
-    Reading database "trapezoidal_tapered/processor1"
+    Reading database "Aero_Fin_mesh_refinement/processor1"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
-    Reading database "trapezoidal_tapered/processor2"
+    Reading database "Aero_Fin_mesh_refinement/processor2"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
-    Reading database "trapezoidal_tapered/processor3"
+    Reading database "Aero_Fin_mesh_refinement/processor3"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
-    Reading database "trapezoidal_tapered/processor4"
+    Reading database "Aero_Fin_mesh_refinement/processor4"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
-    Reading database "trapezoidal_tapered/processor5"
+    Reading database "Aero_Fin_mesh_refinement/processor5"
 --> FOAM Warning : 
     From virtual void Foam::Time::readDict()
     in file db/Time/TimeIO.C at line 403
-    Reading "system/controlDict" at line 17 to 103
+    Reading "system/controlDict" at line 17 to 112
     Disabled output compression for non-ascii format (inefficient/ineffective)
 
 Time = constant
@@ -84,48 +92,48 @@ Writing merged mesh to "constant/polyMesh"
 Reconstructing addressing from processor meshes to the newly reconstructed mesh
 
 Processor 0
-Read processor mesh: "trapezoidal_tapered/processor0"
-Writing addressing : "trapezoidal_tapered/processor0/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor0"
+Writing addressing : "Aero_Fin_mesh_refinement/processor0/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
     boundaryProcAddressing
 
 Processor 1
-Read processor mesh: "trapezoidal_tapered/processor1"
-Writing addressing : "trapezoidal_tapered/processor1/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor1"
+Writing addressing : "Aero_Fin_mesh_refinement/processor1/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
     boundaryProcAddressing
 
 Processor 2
-Read processor mesh: "trapezoidal_tapered/processor2"
-Writing addressing : "trapezoidal_tapered/processor2/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor2"
+Writing addressing : "Aero_Fin_mesh_refinement/processor2/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
     boundaryProcAddressing
 
 Processor 3
-Read processor mesh: "trapezoidal_tapered/processor3"
-Writing addressing : "trapezoidal_tapered/processor3/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor3"
+Writing addressing : "Aero_Fin_mesh_refinement/processor3/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
     boundaryProcAddressing
 
 Processor 4
-Read processor mesh: "trapezoidal_tapered/processor4"
-Writing addressing : "trapezoidal_tapered/processor4/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor4"
+Writing addressing : "Aero_Fin_mesh_refinement/processor4/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
     boundaryProcAddressing
 
 Processor 5
-Read processor mesh: "trapezoidal_tapered/processor5"
-Writing addressing : "trapezoidal_tapered/processor5/constant/polyMesh"
+Read processor mesh: "Aero_Fin_mesh_refinement/processor5"
+Writing addressing : "Aero_Fin_mesh_refinement/processor5/constant/polyMesh"
     pointProcAddressing
     faceProcAddressing
     cellProcAddressing
